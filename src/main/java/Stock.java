@@ -1,10 +1,11 @@
 import java.util.HashMap;
+import java.util.TreeMap;
 
- public class Stock {
+public class Stock {
 
-     HashMap<String, HashMap<String, String>> stocks;
+     HashMap<String, TreeMap<String, String>> stocks;
 
-    public Stock(HashMap<String, HashMap<String, String>> stocks) {
+    public Stock(HashMap<String, TreeMap<String, String>> stocks) {
         this.stocks = stocks;
     }
 

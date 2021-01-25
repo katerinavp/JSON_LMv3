@@ -7,9 +7,9 @@ import com.google.gson.Gson;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        HashMap<String, HashMap<String, String>> stocks = new HashMap<>();
+        HashMap<String, TreeMap<String, String>> stocks = new HashMap<>();
         String numberRegion = "34";
-        HashMap<String, String> numberShopAndCountProduct = new HashMap<>();
+        TreeMap<String, String> numberShopAndCountProduct = new TreeMap<>();
         numberShopAndCountProduct.put("2", "35");
         numberShopAndCountProduct.put("3", "42");
         numberShopAndCountProduct.put("4", "58");
