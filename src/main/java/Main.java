@@ -9,7 +9,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
         HashMap<String, TreeMap<String, String>> stocks = new HashMap<>();
         String numberRegion = "34";
-        TreeMap<String, String> numberShopAndCountProduct = new TreeMap<>();
+        TreeMap<String, String> numberShopAndCountProduct = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return Integer.parseInt(o1)-Integer.parseInt(o2);
+            }
+        });
         numberShopAndCountProduct.put("2", "35");
         numberShopAndCountProduct.put("3", "42");
         numberShopAndCountProduct.put("4", "58");
